@@ -14,7 +14,10 @@ const lexer = moo.compile({
   times:  /\*|x/,
   equals: /=/,
   digit: /[0-9]/,
-  string: /"[^\"]*"/
+  string: /"[^\"]*"/,
+  open_block: /{/,
+  close_block: /}/,
+  arrow: /->/
 });
 %}
 
@@ -29,7 +32,13 @@ input -> %newline | %comment | assignment | value
 atom -> atom_char | atom_char atom
 atom_char -> [A-Z_0-9]
 
-assignment -> "let" %ws %label %ws %equals %ws value
+expression -> value | block | closure_block
+
+assignment -> "let" %ws %label %ws %equals %ws expression
+
+closure_block -> %open_block %ws %label %ws %arrow %ws expression %ws %close_block
+
+block -> %open_block %close_block
 
 value ->  %boolean | number | %string
 

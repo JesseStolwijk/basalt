@@ -3,3 +3,7 @@
 let gross_domestic_product = 913_342_123_483
 let new_feature_enabled = False
 let name = "Jesse"
+
+let name = { value -> 123 }
+
+let function_in_function = { value -> { test -> "Hello" } }
