@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parse": "mkdir dist && nearleyc src/grammar.ne -o dist/grammar.js",
+    "parse": "nearleyc src/grammar.ne -o dist/grammar.js",
     "interpret": "nearley-test dist/grammar.js",
     "start": "node src/index.js"
   },
   "author": "Jesse Stolwijk",
   "license": "ISC",
   "dependencies": {
+    "moo": "^0.5.1",
     "nearley": "^2.19.6"
   }
 }

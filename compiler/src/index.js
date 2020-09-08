@@ -13,9 +13,13 @@ if (parser.results.length === 0) {
   console.error("Expected more input");
 } else if (parser.results.length === 1) {
   console.log("Good parse");
-  console.log(JSON.stringify({ result: parser.results }));
+  parser.results[0]
+    .filter((item) => item.type !== "newline")
+    .forEach((line) => console.log(line));
 } else {
   console.error("Ambiguous parse");
   console.log(JSON.stringify({ result: parser.results[0] }));
   console.log(JSON.stringify({ result: parser.results[1] }));
 }
+
+parser.finish();
