@@ -1,0 +1,16 @@
+{
+  "name": "basalt-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parse": "mkdir dist && nearleyc src/grammar.ne -o dist/grammar.js",
+    "interpret": "nearley-test dist/grammar.js",
+    "start": "node src/index.js"
+  },
+  "author": "Jesse Stolwijk",
+  "license": "ISC",
+  "dependencies": {
+    "nearley": "^2.19.6"
+  }
+}
