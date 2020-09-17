@@ -1,0 +1,117 @@
+[
+  {
+    "tokenType": "COMMENT",
+    "lexeme": "# This is a comment\r",
+    "literal": " This is a comment\r",
+    "line": 1
+  },
+  { "tokenType": "LET", "lexeme": "let", "literal": undefined, "line": 3 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "gross_domestic_product",
+    "literal": undefined,
+    "line": 3
+  },
+  { "tokenType": "EQUAL", "lexeme": "=", "literal": undefined, "line": 3 },
+  { "tokenType": "NUMBER", "lexeme": "913", "literal": 913, "line": 3 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "_342_123_483",
+    "literal": undefined,
+    "line": 3
+  },
+  { "tokenType": "LET", "lexeme": "let", "literal": undefined, "line": 4 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "new_feature_enabled",
+    "literal": undefined,
+    "line": 4
+  },
+  { "tokenType": "EQUAL", "lexeme": "=", "literal": undefined, "line": 4 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "False",
+    "literal": undefined,
+    "line": 4
+  },
+  { "tokenType": "LET", "lexeme": "let", "literal": undefined, "line": 5 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "name",
+    "literal": undefined,
+    "line": 5
+  },
+  { "tokenType": "EQUAL", "lexeme": "=", "literal": undefined, "line": 5 },
+  {
+    "tokenType": "STRING",
+    "lexeme": "\"Jesse\"",
+    "literal": "Jesse",
+    "line": 5
+  },
+  { "tokenType": "LET", "lexeme": "let", "literal": undefined, "line": 7 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "name",
+    "literal": undefined,
+    "line": 7
+  },
+  { "tokenType": "EQUAL", "lexeme": "=", "literal": undefined, "line": 7 },
+  { "tokenType": "LEFT_BRACE", "lexeme": "{", "literal": undefined, "line": 7 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "value",
+    "literal": undefined,
+    "line": 7
+  },
+  { "tokenType": "ARROW", "lexeme": "->", "literal": undefined, "line": 7 },
+  { "tokenType": "NUMBER", "lexeme": "123", "literal": 123, "line": 7 },
+  {
+    "tokenType": "RIGHT_BRACE",
+    "lexeme": "}",
+    "literal": undefined,
+    "line": 7
+  },
+  { "tokenType": "LET", "lexeme": "let", "literal": undefined, "line": 9 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "function_in_function",
+    "literal": undefined,
+    "line": 9
+  },
+  { "tokenType": "EQUAL", "lexeme": "=", "literal": undefined, "line": 9 },
+  { "tokenType": "LEFT_BRACE", "lexeme": "{", "literal": undefined, "line": 9 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "value",
+    "literal": undefined,
+    "line": 9
+  },
+  { "tokenType": "ARROW", "lexeme": "->", "literal": undefined, "line": 9 },
+  { "tokenType": "LEFT_BRACE", "lexeme": "{", "literal": undefined, "line": 9 },
+  {
+    "tokenType": "IDENTIFIER",
+    "lexeme": "test",
+    "literal": undefined,
+    "line": 9
+  },
+  { "tokenType": "ARROW", "lexeme": "->", "literal": undefined, "line": 9 },
+  {
+    "tokenType": "STRING",
+    "lexeme": "\"Hello\"",
+    "literal": "Hello",
+    "line": 9
+  },
+  {
+    "tokenType": "RIGHT_BRACE",
+    "lexeme": "}",
+    "literal": undefined,
+    "line": 9
+  },
+  {
+    "tokenType": "RIGHT_BRACE",
+    "lexeme": "}",
+    "literal": undefined,
+    "line": 9
+  },
+  { "tokenType": "EOF", "lexeme": "", "line": 9 }
+]
