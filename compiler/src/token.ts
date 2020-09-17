@@ -33,6 +33,7 @@ export enum TokenType {
   IDENTIFIER = "IDENTIFIER",
   STRING = "STRING",
   NUMBER = "NUMBER",
+  COMMENT = "COMMENT",
 
   // Keywords.
   AND = "AND",

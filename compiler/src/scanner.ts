@@ -74,12 +74,15 @@ export class Scanner {
           this.match("=") ? TokenType.GREATER_EQUAL : TokenType.GREATER
         );
         break;
+      case "#":
+        // Ignore comment
+        let literal = "";
+        while (this.peek() !== "\n" && !this.isAtEnd())
+          literal += this.advance();
+        this.addToken(TokenType.COMMENT, literal);
+        break;
       case "/":
-        if (this.match("/")) {
-          while (this.peek() !== "\n" && !this.isAtEnd()) this.advance();
-        } else {
-          this.addToken(TokenType.SLASH);
-        }
+        this.addToken(TokenType.SLASH);
         break;
       case " ":
       case "\r":
