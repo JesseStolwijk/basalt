@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parse": "nearleyc src/grammar.ne -o dist/grammar.js",
+    "parse": "nearleyc src/basalt.ne -o dist/grammar.js",
     "interpret": "nearley-test dist/grammar.js",
     "start": "node src/index.js"
   },
