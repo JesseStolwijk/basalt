@@ -1,0 +1,12 @@
+# This is a comment
+
+module test {
+    let gross_domestic_product = 912
+    let new_feature_enabled = False
+
+    let mutable name = "Jesse"
+
+    let name = { value -> 123 }
+
+    export let function_in_function = { value -> { test -> "Hello" } }
+}

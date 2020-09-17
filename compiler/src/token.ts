@@ -41,6 +41,9 @@ export enum TokenType {
   TRUE = "TRUE",
   FALSE = "FALSE",
   LET = "LET",
+  MUTABLE = "MUTABLE",
+  EXPORT = "EXPORT",
+  MODULE = "MODULE",
 
   EOF = "EOF",
 }
@@ -51,4 +54,7 @@ export const keywords: { [key: string]: TokenType } = {
   or: TokenType.OR,
   true: TokenType.TRUE,
   let: TokenType.LET,
+  mutable: TokenType.MUTABLE,
+  export: TokenType.EXPORT,
+  module: TokenType.MODULE,
 };
