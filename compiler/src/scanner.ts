@@ -75,7 +75,7 @@ export class Scanner {
         );
         break;
       case "#":
-        // Ignore comment
+        // Store comment content as literal
         let literal = "";
         while (this.peek() !== "\n" && !this.isAtEnd())
           literal += this.advance();
